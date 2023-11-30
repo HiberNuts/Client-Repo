@@ -7,27 +7,27 @@ import AboutBackground from "../Assets/about-background.png";
 
 const Home = () => {
   const customFontStyle = {
-    fontFamily: 'Arial, sans-serif', // Change this to your desired font family
+    fontFamily: "Arial, sans-serif", // Change this to your desired font family
     // You can also add more font properties like fontWeight, fontStyle, etc.
   };
 
   return (
-    <div className="home-container">
-      <div className="about-background-image-container">
-        <img src={AboutBackground} alt="" />
-      </div>
+    <div style={{ height: "100vh" }} className="home-container">
+      {/* <div className="about-background-image-container">
+        <img
+          style={{ height: "100vh", objectFit: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}
+          src={AboutBackground}
+          alt=""
+        />
+      </div> */}
 
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section" style={customFontStyle}>
-          <h1 className="primary-heading">
-            Claim Your COM Airdrop
-          </h1>
-          <p className="primary-text">
-            Claim Tutorial
-          </p>
+          <h1 className="primary-heading">Claim Your COM Airdrop</h1>
+          <p className="primary-text">Claim Tutorial</p>
           <p className="primary-text">
             <NFTClaim />
           </p>

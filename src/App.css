@@ -5,14 +5,16 @@
   font-family: "Reem Kufi", sans-serif !important;
 }
 img {
-  max-width: 100%;
-  height: auto;
+  height: 70vh;
 }
 .App {
   min-height: 100vh;
-  width: 85vw;
-  max-width: 1900px;
-  margin: 0rem auto;
+  width: 100%;
+  padding: 80px;
+  background-image: url("./Assets/about-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 body {
   max-width: 100%;
@@ -60,6 +62,7 @@ nav {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 .home-banner-container {
   position: relative;
   display: flex;
@@ -115,7 +118,7 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #87D5F7;
+  background-color: #87d5f7;
 }
 .about-section-container {
   margin-top: 2rem;
@@ -255,7 +258,7 @@ nav {
 .testimonials-stars-container svg {
   margin: 0rem 0.25rem;
   font-size: 1.5rem;
-  color: #87D5F7;
+  color: #87d5f7;
 }
 .testimonial-section-bottom h2 {
   margin-top: 1.5rem;
@@ -425,5 +428,38 @@ nav {
   .home-bannerImage-container,
   .about-background-image-container {
     display: none;
+  }
+  img {
+    height: 400px;
+  }
+}
+
+.gradient-border {
+  background: linear-gradient(90deg, rgba(147, 41, 210, 1) 0%, rgba(68, 1, 236, 1) 50%, rgba(255, 0, 255, 1) 100%);
+  border-radius: 0.375rem; /* This is 6px when using default Tailwind config which is equivalent to rounded-md */
+  padding: 2px; /* This controls the thickness of your border */
+}
+
+.gradient-border-input {
+  width: 100%;
+  padding: 0.5rem 0.5rem; /* Adjust padding to control the size of the input field */
+  background: #000; /* This is the background color of the input field */
+  border: none; /* Remove default border */
+  border-radius: 0.375rem; /* Match the border-radius of the gradient border */
+  color: white;
+  height: 45px; /* Text color */
+}
+
+.gradient-border-input:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
+@media screen and (max-width: 767px) {
+  /* Adjust the width for mobile screens to 80% */
+  .gradient-border-input {
+    width: 300px !important;
+  }
+  .whiteButton {
+    margin-top: 20px;
   }
 }
