@@ -470,4 +470,9 @@ nav {
   .claim-container {
     height: 200px !important;
   }
+  .App {
+    
+    padding: 20px;
+   
+  }
 }
