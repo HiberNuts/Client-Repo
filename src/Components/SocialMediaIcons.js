@@ -29,7 +29,7 @@ const SocialMediaIcons = () => {
   return (
     <div
       className="social-media-icons"
-      style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly", width: "100vw" }}
+      style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly", width: "100%" }}
     >
       {socialMediaData.map((socialMedia, index) => (
         <div key={index} className="social-media-icon" style={{ display: "flex", flexWrap: "wrap" }}>

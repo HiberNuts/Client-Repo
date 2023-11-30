@@ -23,7 +23,7 @@ function NFTClaim() {
     justifyContent: "center",
     flexDirection: "column",
     justifyContent: "space-between",
-    height: "200px",
+    height: "150px",
   };
 
   const inputContainerStyle = {

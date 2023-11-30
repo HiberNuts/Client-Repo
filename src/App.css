@@ -467,4 +467,7 @@ nav {
   .inputDiv {
     flex-wrap: wrap;
   }
+  .claim-container {
+    height: 200px !important;
+  }
 }
