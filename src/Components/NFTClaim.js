@@ -70,16 +70,17 @@ function NFTClaim() {
   return (
     <div className="claim-container" style={containerStyle}>
       <div
+        className="inputDiv"
         style={{
           marginLeft: "10px",
           display: "flex",
           justifyContent: "space-evenly",
-          flexWrap: "wrap",
+          width: "100%",
         }}
       >
         <div style={{ borderRadius: "60px" }} className="gradient-border">
           <input
-            style={{ width: "500px", borderRadius: "50px" }}
+            style={{ width: "400px", borderRadius: "50px" }}
             type="text"
             value={address}
             onChange={handleAddressChange}

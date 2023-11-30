@@ -449,7 +449,9 @@ nav {
   color: white;
   height: 45px; /* Text color */
 }
-
+.whiteButton {
+  margin-left: 20px;
+}
 .gradient-border-input:focus {
   outline: none; /* Removes the default focus outline */
 }
@@ -461,5 +463,8 @@ nav {
   }
   .whiteButton {
     margin-top: 20px;
+  }
+  .inputDiv {
+    flex-wrap: wrap;
   }
 }
